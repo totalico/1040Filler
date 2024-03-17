@@ -1,0 +1,141 @@
+[FIELDS]
+name = topmostSubform[0].Page1[0].f1_1[0]
+ssn = topmostSubform[0].Page1[0].f1_2[0]
+
+#ISRAEL
+country = topmostSubform[0].Page1[0].f1_3[0]
+
+#WAGES from israel
+state_from   =  topmostSubform[0].Page1[0].Part1Table[0].LineI[0].f1_4[0]
+income_reason = topmostSubform[0].Page1[0].Part1Table[0].Line1a[0].Line1a[0].f1_7[0]
+
+income_sum = topmostSubform[0].Page1[0].Part1Table[0].Line1a[0].Line1aColA[0].f1_10[0]
+
+total_income_sum = topmostSubform[0].Page1[0].Part1Table[0].Line1a[0].Ln1aTotal[0].f1_13[0]
+
+itimazed_deduction = topmostSubform[0].Page1[0].Part1Table[0].Line3a[0].f1_17[0]
+
+sum_deduction = topmostSubform[0].Page1[0].Part1Table[0].Line3c[0].f1_23[0]
+
+gross_income = topmostSubform[0].Page1[0].Part1Table[0].Line3d[0].f1_26[0]
+
+#Usuallyaslined
+gross_income_all_sources = topmostSubform[0].Page1[0].Part1Table[0].Line3e[0].f1_29[0]
+
+#Usuallyis1
+divide_e_by_d = topmostSubform[0].Page1[0].Part1Table[0].Line3f[0].f1_32[0]
+
+#Usuallyisc
+mult_f_by_c = topmostSubform[0].Page1[0].Part1Table[0].Line3g[0].f1_35[0]
+
+#Usuallyis3c
+deduction_from_all = topmostSubform[0].Page1[0].Part1Table[0].Line6[0].f1_47[0]
+
+#Usuallyis3c
+deduction_from_all_sum = topmostSubform[0].Page1[0].Part1Table[0].Line6[0].f1_50[0]
+
+wage_sub_deduction = topmostSubform[0].Page1[0].f1_51[0]
+
+date_range = topmostSubform[0].Page1[0].Part2TableBody[0].RowA[0].f1_52[0]
+
+forigen_texes_paid_ILS = topmostSubform[0].Page1[0].Part2TableBody[0].RowA[0].f1_56[0]
+
+forigen_texes_paid_USD = topmostSubform[0].Page1[0].Part2TableBody[0].RowA[0].f1_60[0]
+
+forigen_texes_paid_USD_sum = topmostSubform[0].Page1[0].Part2TableBody[0].RowA[0].f1_61[0]
+
+#Thisthetotaltaxthatpaid
+forigen_texes_paid_USD_total = topmostSubform[0].Page1[0].f1_82[0]
+
+#line9-getsfromline8
+tax = topmostSubform[0].Page2[0].f2_1[0]
+
+#usually0
+carry_over = topmostSubform[0].Page2[0].f2_2[0]
+
+#line11-asline8
+tax_carry = topmostSubform[0].Page2[0].f2_3[0]
+
+#line11-asline8
+combine_all_tax = topmostSubform[0].Page2[0].f2_6[0]
+
+#line15-asline7
+income_after_deduction = topmostSubform[0].Page2[0].f2_7[0]
+
+#line16-0
+adjestment = topmostSubform[0].Page2[0].f2_8[0]
+
+#line17-asline7
+income_total = topmostSubform[0].Page2[0].f2_9[0]
+
+#line18getline15in1040
+amount_in_1040_line_15 = topmostSubform[0].Page2[0].f2_10[0]
+
+#line19
+div_income_by_line_15 = topmostSubform[0].Page2[0].f2_11[0]
+
+#line20-includeschedule2line2and1040line16
+amount_in_1040_line_16 = topmostSubform[0].Page2[0].f2_12[0]
+
+#l21
+mult_l20_by_l19 = topmostSubform[0].Page2[0].f2_13[0]
+
+#line23asline21
+add_lines_20_21 = topmostSubform[0].Page2[0].f2_15[0]
+
+#line24enterhereandline33
+smaller_l14_or_l23 = topmostSubform[0].Page2[0].f2_16[0]
+
+from_l24 = topmostSubform[0].Page2[0].f2_25[0]
+
+#line34-Zero
+boycott_reduction_always_0 = topmostSubform[0].Page2[0].f2_26[0]
+
+#line35-putoutputinschd.3line2
+sum_to_1040_schedule_3_l2 = topmostSubform[0].Page2[0].f2_27[0]
+
+\Users\aman\Documents\IRS\2022\f1116_2022.pdf = path=C
+
+
+
+
+[~~~~output~~~to~~~fields~~~~~~~~~~~~~~~]
+
+
+fields ['name'] : 
+fields ['ssn'] : 
+fields ['country'] : 
+fields ['income_reason'] : 
+fields ['income_sum'] : 
+fields ['total_income_sum'] : 
+fields ['itimazed_deduction'] : 
+fields ['sum_deduction'] : 
+fields ['gross_income'] : 
+fields ['gross_income_all_sources'] : 
+fields ['divide_e_by_d'] : 
+fields ['mult_f_by_c'] : 
+fields ['deduction_from_all'] : 
+fields ['deduction_from_all_sum'] : 
+fields ['wage_sub_deduction'] : 
+fields ['date_range'] : 
+fields ['forigen_texes_paid_ILS'] : 
+fields ['forigen_texes_paid_USD'] : 
+fields ['forigen_texes_paid_USD_sum'] : 
+fields ['forigen_texes_paid_USD_total'] : 
+fields ['tax'] : 
+fields ['carry_over'] : 
+fields ['tax_carry'] : 
+fields ['combine_all_tax'] : 
+fields ['income_after_deduction'] : 
+fields ['adjestment'] : 
+fields ['income_total'] : 
+fields ['amuont_in_1040_line_15'] : 
+fields ['div_income_by_line_15'] : 
+fields ['amuont_in_1040_line_16'] : 
+fields ['mult_l20_by_l19'] : 
+fields ['add_lines_20_21'] : 
+fields ['smaller_l14_or_l23'] : 
+fields ['from_l24'] : 
+fields ['boycott_reduction_always_0'] : 
+fields ['sum_to_1040_schedule_3_l2'] : 
+fields ['\Users\aman\Documents\IRS\2022\f1116_2022.pdf'] : 

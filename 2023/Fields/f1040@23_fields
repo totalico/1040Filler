@@ -1,0 +1,135 @@
+[FIELDS]
+
+start_date =     topmostSubform[0].Page1[0].f1_01[0]
+end_date =       topmostSubform[0].Page1[0].f1_02[0]
+end_date_year =   topmostSubform[0].Page1[0].f1_03[0]
+first_name =    topmostSubform[0].Page1[0].f1_04[0]
+family_name=    topmostSubform[0].Page1[0].f1_05[0]
+personal_ssn =  topmostSubform[0].Page1[0].f1_06[0]
+address =       topmostSubform[0].Page1[0].Address_ReadOrder[0].f1_10[0]
+apartment =     topmostSubform[0].Page1[0].Address_ReadOrder[0].f1_11[0]
+city =          topmostSubform[0].Page1[0].Address_ReadOrder[0].f1_12[0]
+country1  =     topmostSubform[0].Page1[0].Address_ReadOrder[0].f1_13[0]
+zip1     =      topmostSubform[0].Page1[0].Address_ReadOrder[0].f1_14[0]
+country2 =      topmostSubform[0].Page1[0].Address_ReadOrder[0].f1_15[0]
+country3 =      topmostSubform[0].Page1[0].Address_ReadOrder[0].f1_16[0]
+zip2     =      topmostSubform[0].Page1[0].Address_ReadOrder[0].f1_17[0]
+
+dep_1_name = topmostSubform[0].Page1[0].Table_Dependents[0].Row1[0].f1_19[0]
+dep_1_ssn  = topmostSubform[0].Page1[0].Table_Dependents[0].Row1[0].f1_20[0]
+dep_1_gen  = topmostSubform[0].Page1[0].Table_Dependents[0].Row1[0].f1_21[0]
+
+dep_2_name = topmostSubform[0].Page1[0].Table_Dependents[0].Row2[0].f1_22[0]
+dep_2_ssn  =  topmostSubform[0].Page1[0].Table_Dependents[0].Row2[0].f1_23[0]
+dep_2_gen  =  topmostSubform[0].Page1[0].Table_Dependents[0].Row2[0].f1_24[0]
+
+dep_3_name = topmostSubform[0].Page1[0].Table_Dependents[0].Row3[0].f1_25[0]
+dep_3_ssn  =  topmostSubform[0].Page1[0].Table_Dependents[0].Row3[0].f1_26[0]
+dep_3_gen  =  topmostSubform[0].Page1[0].Table_Dependents[0].Row3[0].f1_27[0]
+
+dep_4_name =topmostSubform[0].Page1[0].Table_Dependents[0].Row4[0].f1_28[0]
+dep_4_ssn  = topmostSubform[0].Page1[0].Table_Dependents[0].Row4[0].f1_29[0]
+dep_4_gen  = topmostSubform[0].Page1[0].Table_Dependents[0].Row4[0].f1_30[0]
+
+#calculations
+
+#line 1
+salary = topmostSubform[0].Page1[0].f1_31[0]
+
+#line 1z
+sum_salary= topmostSubform[0].Page1[0].f1_40[0]
+
+#line 3a - qualified dividends
+qualified_dividends = topmostSubform[0].Page1[0].f1_43[0]
+
+#line 3b - ordinary dividends
+ordinary_dividends = topmostSubform[0].Page1[0].f1_44[0]
+
+#line 7 - need to fill schd D and 8949 form
+capital_gain = topmostSubform[0].Page1[0].Line4a-11_ReadOrder[0].f1_51[0]
+
+#line 8 - other income Dmei Lida etc. -> need to add schedule 1
+dmei_liyda  = topmostSubform[0].Page1[0].Line4a-11_ReadOrder[0].f1_52[0]
+
+#line 9
+total_income=topmostSubform[0].Page1[0].Line4a-11_ReadOrder[0].f1_53[0]
+
+#line 10
+total_adjusted=topmostSubform[0].Page1[0].Line4a-11_ReadOrder[0].f1_54[0]
+
+#line 11
+total_income_adjusted=topmostSubform[0].Page1[0].Line4a-11_ReadOrder[0].f1_55[0]
+
+#line 13
+standard_deduction= topmostSubform[0].Page1[0].f1_57[0]
+
+#line 14 - add lines 13, 14
+total_dedction=     topmostSubform[0].Page1[0].f1_58[0]
+
+l15_taxable_income = topmostSubform[0].Page1[0].f1_59[0]
+
+#line 16 taxable income (Use table. For stocks use worksheet in inst.)
+l16_tax = topmostSubform[0].Page2[0].f2_02[0]
+
+l17_amount_s2l3-0 = topmostSubform[0].Page2[0].f2_03[0]
+
+l18_add_l16_l17 = topmostSubform[0].Page2[0].f2_04[0]
+
+l19_childTaxCredit_8812l19-0 = topmostSubform[0].Page2[0].f2_05[0]
+
+l20_amount_s3l8-0 = topmostSubform[0].Page2[0].f2_06[0]
+
+l21_add_l20_l19 = topmostSubform[0].Page2[0].f2_07[0]
+
+#zeroorlessinput-0
+l22_l18_sub_l21 = topmostSubform[0].Page2[0].f2_08[0]
+
+l23_otherTaxes_s2l21-0 = topmostSubform[0].Page2[0].f2_09[0]
+
+l24_add_22_23 = topmostSubform[0].Page2[0].f2_10[0]
+
+l25a_federalIncome_w2-0 = topmostSubform[0].Page2[0].f2_11[0]
+
+#Accordingto1099p.p.3
+l25b_federalIncome_1099-0 = topmostSubform[0].Page2[0].f2_12[0]
+
+l25c_other_forms-0 = topmostSubform[0].Page2[0].f2_13[0]
+
+l25d_total_a-c-0 = topmostSubform[0].Page2[0].f2_14[0]
+
+l26_estimated_2021_return_overpaid-0 = topmostSubform[0].Page2[0].f2_15[0]
+
+l27_EIC-0 = topmostSubform[0].Page2[0].f2_16[0]
+
+l28_aditional_childTaxCredit_8812l27 = topmostSubform[0].Page2[0].f2_17[0]
+
+l29_american_oppornunity-0 = topmostSubform[0].Page2[0].f2_18[0]
+
+l31_amount_s3l15-0 = topmostSubform[0].Page2[0].f2_20[0]
+
+l32_add_ll27_l28_l29_l31-l28 = topmostSubform[0].Page2[0].f2_21[0]
+
+l33_totalPayments_add_l25b_l26_l32 = topmostSubform[0].Page2[0].f2_22[0]
+
+#Overpaid.ifl33>l24:l33-l24
+l34_l33_isBigger_l24_sub_l33_l24 = topmostSubform[0].Page2[0].f2_23[0]
+
+l35a_amount_to_refound = topmostSubform[0].Page2[0].f2_24[0]
+
+l35b_routing = topmostSubform[0].Page2[0].RoutingNo[0].f2_25[0]
+
+l35d_account = topmostSubform[0].Page2[0].AccountNo[0].f2_26[0]
+
+l36_sum_to_apply_next_year-0 = topmostSubform[0].Page2[0].f2_27[0]
+
+l37_l24_sub_l33-0 = topmostSubform[0].Page2[0].f2_28[0]
+
+l38_estimated_tax_penalty-0 = topmostSubform[0].Page2[0].f2_29[0]
+
+occupation = topmostSubform[0].Page2[0].f2_33[0]
+
+phone = topmostSubform[0].Page2[0].f2_37[0]
+
+email = topmostSubform[0].Page2[0].f2_38[0]
+
+

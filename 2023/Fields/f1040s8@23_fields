@@ -1,0 +1,108 @@
+[FIELDS]
+name = topmostSubform[0].Page1[0].f1_1[0]
+
+ssn = topmostSubform[0].Page1[0].f1_2[0]
+
+l1_gross_income = topmostSubform[0].Page1[0].f1_3[0]
+
+l2d_0 = topmostSubform[0].Page1[0].f1_7[0]
+
+l3__gross_income = topmostSubform[0].Page1[0].f1_8[0]
+
+l4_num_children = topmostSubform[0].Page1[0].f1_9[0]
+
+l5_mult_l4_2000 = topmostSubform[0].Page1[0].f1_10[0]
+
+l6_non_qualified_children-0 = topmostSubform[0].Page1[0].Line6ReadOrder[0].f1_11[0]
+
+l7_mult_l6_500 = topmostSubform[0].Page1[0].f1_12[0]
+
+l8_add_l7_l5 = topmostSubform[0].Page1[0].f1_13[0]
+
+l9_status_200k = topmostSubform[0].Page1[0].f1_14[0]
+
+l10_sub_from_l3_l9-0 = topmostSubform[0].Page1[0].f1_15[0]
+
+l11_mult_l10_0.05 = topmostSubform[0].Page1[0].f1_16[0]
+
+#l12-usuallyyestheamountinl8>l11
+l12_sub_l8_l11 = topmostSubform[0].Page1[0].f1_17[0]
+
+#complitefrominst,worksheetA&B
+l13_credit_limit_worksheet_A = topmostSubform[0].Page1[0].f1_18[0]
+
+#asinl12.Put0inf1040l19
+l14-0 = topmostSubform[0].Page1[0].f1_19[0]
+
+#usuallyasl12
+l16a_sub_l12_l14 = topmostSubform[0].Page2[0].f2_1[0]
+
+l16b1_num_children = topmostSubform[0].Page2[0].f2_2[0]
+
+l16b2_l16b1*1500 = topmostSubform[0].Page2[0].f2_3[0]
+
+l17_smaller_l16a_l16b2 = topmostSubform[0].Page2[0].f2_4[0]
+
+#wages
+l18a_earned_income = topmostSubform[0].Page2[0].f2_5[0]
+
+l18b_combat_pay-0 = topmostSubform[0].Page2[0].f2_6[0]
+
+l19_l18a_isBigger_2500 = topmostSubform[0].Page2[0].f2_7[0]
+
+L20_mult_l19_by_0.15 = topmostSubform[0].Page2[0].f2_8[0]
+
+l21_medicare-0 = topmostSubform[0].Page2[0].f2_9[0]
+
+l22_s1l15-0 = topmostSubform[0].Page2[0].f2_10[0]
+
+l23_add_l22_21-0 = topmostSubform[0].Page2[0].f2_11[0]
+
+l24_2040L27-0 = topmostSubform[0].Page2[0].f2_12[0]
+
+l25_sub_l23_l24-0 = topmostSubform[0].Page2[0].f2_13[0]
+
+l26_bigger_l20_l25-l20 = topmostSubform[0].Page2[0].f2_14[0]
+
+l27_smaller_l26_l17-l17 = topmostSubform[0].Page2[0].f2_15[0]
+
+\Users\aman\PycharmProjects\pdfAutoCompliter\fields_forms\f1040s8--2022.pdf = path=C
+
+
+
+
+[~~~~output~~~to~~~fields~~~~~~~~~~~~~~~]
+
+
+fields ['name'] : 
+fields ['ssn'] : 
+fields ['l1_gross_income'] : 
+fields ['l2d_0'] : 
+fields ['l3__gross_income'] : 
+fields ['l4_num_children'] : 
+fields ['l5_mult_l4_2000'] : 
+fields ['l6_non_qualified_children-0'] : 
+fields ['l7_mult_l6_500'] : 
+fields ['l8_add_l7_l5'] : 
+fields ['l9_status_200k'] : 
+fields ['l10_sub_from_l3_l9-0'] : 
+fields ['l11_mult_l10_0.05'] : 
+fields ['l12_sub_l8_l11'] : 
+fields ['l13_credit_limit_worksheet_A'] : 
+fields ['l14-0'] : 
+fields ['l16a_sub_l12_l14'] : 
+fields ['l16b1_num_children'] : 
+fields ['l16b2_l16b1*1500'] : 
+fields ['l17_smaller_l16a_l16b2'] : 
+fields ['l18a_earned_income'] : 
+fields ['l18b_combat_pay-0'] : 
+fields ['l19_l18a_isBigger_2500'] : 
+fields ['L20_mult_l19_by_0.15'] : 
+fields ['l21_medicare-0'] : 
+fields ['l22_s1l15-0'] : 
+fields ['l23_add_l22_21-0'] : 
+fields ['l24_2040L27-0'] : 
+fields ['l25_sub_l23_l24-0'] : 
+fields ['l26_bigger_l20_l25-l20'] : 
+fields ['l27_smaller_l26_l17-l17'] : 
+fields ['\Users\aman\PycharmProjects\pdfAutoCompliter\fields_forms\f1040s8--2022.pdf'] : 

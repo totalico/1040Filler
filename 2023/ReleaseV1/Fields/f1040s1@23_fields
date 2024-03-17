@@ -1,0 +1,34 @@
+[FIELDS]
+name = form1[0].Page1[0].f1_01[0]
+
+#ssn
+ssn = form1[0].Page1[0].f1_02[0]
+
+#sumofotherincome
+other_income_sum = form1[0].Page1[0].Line8z_ReadOrder[0].f1_32[0]
+
+#srcofincome
+other_income_src = form1[0].Page1[0].Line8z_ReadOrder[0].f1_33[0]
+
+#line8z
+other_income_amount = form1[0].Page1[0].f1_34[0]
+
+#line9
+total_income = form1[0].Page1[0].f1_35[0]
+
+#line10
+sum = form1[0].Page1[0].f1_36[0]
+
+
+
+
+[~~~~output~~~to~~~fields~~~~~~~~~~~~~~~]
+
+
+fields [name] : 
+fields [ssn] : 
+fields [other_income_sum] : 
+fields [other_income_src] : 
+fields [other_income_amount] : 
+fields [total_income] : 
+fields [sum] : 

@@ -1,0 +1,60 @@
+[FIELDS]
+name = topmostSubform[0].Page1[0].f1_01[0]
+
+ssn = topmostSubform[0].Page1[0].f1_02[0]
+
+#line1a
+proceed_short_term = topmostSubform[0].Page1[0].Table_PartI[0].Row1a[0].f1_03[0]
+
+cost_short_term(basis) = topmostSubform[0].Page1[0].Table_PartI[0].Row1a[0].f1_04[0]
+
+gain_short_term = topmostSubform[0].Page1[0].Table_PartI[0].Row1a[0].f1_06[0]
+
+#line6-[ifyouhaveminus-inpreioryear]
+loss_carryover = topmostSubform[0].Page1[0].f1_21[0]
+
+#line7
+sum_gain_carryover = topmostSubform[0].Page1[0].f1_22[0]
+
+#line8a
+proceed_long_term = topmostSubform[0].Page1[0].Table_PartII[0].Row8a[0].f1_23[0]
+
+cost_long_term = topmostSubform[0].Page1[0].Table_PartII[0].Row8a[0].f1_24[0]
+
+gain_long_term = topmostSubform[0].Page1[0].Table_PartII[0].Row8a[0].f1_26[0]
+
+#line14
+long_term_carryover = topmostSubform[0].Page1[0].f1_42[0]
+
+#line15-lossescarryover
+sum_long_term_gain = topmostSubform[0].Page1[0].f1_43[0]
+
+lzero= topmostSubform[0].Page2[0].f2_02[0]
+
+lfzero = topmostSubform[0].Page2[0].f2_03[0]
+
+#line16-line15+line7
+sum_short_long = topmostSubform[0].Page2[0].f2_01[0]
+
+l18= topmostSubform[0].Page2[0].f2_02[0]
+
+l19 = topmostSubform[0].Page2[0].f2_03[0]
+
+[~~~~output~~~to~~~fields~~~~~~~~~~~~~~~]
+
+
+fields ['name'] : 
+fields ['ssn'] : 
+fields ['proceed_short_term'] : 
+fields ['cost_short_term(basis)'] : 
+fields ['gain_short_term'] : 
+fields ['loss_carryover'] : 
+fields ['sum_gain_carryover'] : 
+fields ['proceed_long_term'] : 
+fields ['cost_long_term'] : 
+fields ['gain_long_term'] : 
+fields ['long_term_carryover'] : 
+fields ['sum_long_term_gain'] : 
+fields ['sum_short_long'] : 
+fields ['l18'] :
+fields ['l19'] :

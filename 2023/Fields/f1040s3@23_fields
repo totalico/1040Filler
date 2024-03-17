@@ -1,0 +1,24 @@
+[FIELDS]
+name = topmostSubform[0].Page1[0].f1_01[0]
+
+ssn = topmostSubform[0].Page1[0].f1_02[0]
+
+#l1
+_1116form = topmostSubform[0].Page1[0].f1_03[0]
+
+#l8-as_1116inl1
+total = topmostSubform[0].Page1[0].f1_26[0]
+
+\Users\aman\PycharmProjects\pdfAutoCompliter\fields_forms\f1040s3.pdf = path=C
+
+
+
+
+[~~~~output~~~to~~~fields~~~~~~~~~~~~~~~]
+
+
+fields ['name'] : 
+fields ['ssn'] : 
+fields ['_1116form'] : 
+fields ['total'] : 
+fields ['\Users\aman\PycharmProjects\pdfAutoCompliter\fields_forms\f1040s3.pdf'] : 
