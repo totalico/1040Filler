@@ -1,0 +1,13 @@
+
+
+===========     ILS/DOLLAR RATE   ============
+
+1 USD = 3.8 ILS
+===========     DEPENDENCIES    ===================
+5 > Name:YONATAN  SSN: 172737185  Relation: SON  Qualifies for Child tax credit [V]
+6 > Name:TAMAR  SSN: 359535010  Relation: DAUGHTER  Qualifies for Child tax credit [V]
+===========     ADDED FORMS     =================
+1 > schedule D
+2 > schedule 3
+3 > form 1116
+4 > form 8812
