@@ -15,14 +15,13 @@ def writePdfFile (file):
     pdf.set_font("Arial", size=18)  # font and textsize
     pdf.cell(200, 10, txt="       #STMT", ln=1, align="L")
     pdf.cell(200, 10, txt="       ", ln=2, align="L")
-    pdf.cell(200, 10, txt="       ", ln=3, align="L")
 
     pdf.set_font("Arial", size=12)  # font and textsize
 
     counter = 4
     with open(file, 'r') as f:
         for line in f.readlines():
-            pdf.cell(200, 5, txt=line, ln=counter, align="L")
+            pdf.cell(200, 7, txt=line, ln=counter, align="L")
             counter +=1
 
     pdf.output(configObjToArray('DIRS', '.editconfig')['output_folder'] + '\\' + 'STMT.pdf')
