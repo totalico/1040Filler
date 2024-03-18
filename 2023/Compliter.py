@@ -53,7 +53,7 @@ def reader():
     l3a = dividends['qualified_dividend']
     l3b = int(dividends['ordinary_dividend'])
     l7 = int(capitalGain(pdfs['scheduled']['name'] ,pdfs['scheduled']['fieldsFile']))
-    l8 = int(schedule_1( pdfs['schedule1']['name'] ,pdfs['schedule1']['fieldsFile']))
+    l8 = int(int(schedule_1( pdfs['schedule1']['name'] ,pdfs['schedule1']['fieldsFile'])) / float(calc['ils_usd_rate']))
     l9 = int(l1a)+int(l3b)+int(l7)+int(l8)
     l10 = 0 #adjestmnets
     l11 = l9-l10
@@ -126,6 +126,7 @@ def reader():
                                 fields['qualified_dividends']:str(l3a),
                                 fields['ordinary_dividends'] : str(l3b),
                                 fields['capital_gain']:str(l7),
+                                fields['dmei_liyda']:str(l8)
                                 fields['total_income']:str (l9),
                                 fields['total_adjusted']:str(l10),
                                 fields['total_income_adjusted']:str(l11),

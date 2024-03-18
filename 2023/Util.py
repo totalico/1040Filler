@@ -169,6 +169,6 @@ def createFieldsFile (fileName):
 
 # fieldsDumper('C:\\Users\\aman\\Documents\\GitHub\\, True)
 # comparefiles ('C:\\Users\\aman\\PycharmProjects\\1040_AutoScript@2023\\PDFs\\f1040s3.pdf ', 'C:\\Users\\aman\\PycharmProjects\\1040_AutoScript@2023\\PDFs\\22\\f1040s3.pdf ' )
-# fieldsDumper ( 'C:\\Users\\aman\\PycharmProjects\\1040_AutoScript@2023\\PDFs\\f1040.pdf' , True)
+fieldsDumper ( 'C:\\Users\\aman\\PycharmProjects\\1040_AutoScript@2023\\PDFs\\f1116.pdf' , True)
 
 # writePdfFile ('C:\\Users\\aman\\PycharmProjects\\1040_AutoScript@2023\\1040_2023_files-beta\\Declarations_2023.txt')

@@ -60,8 +60,8 @@ total_adjusted=topmostSubform[0].Page1[0].Line4a-11_ReadOrder[0].f1_54[0]
 #line 11
 total_income_adjusted=topmostSubform[0].Page1[0].Line4a-11_ReadOrder[0].f1_55[0]
 
-#line 13
-standard_deduction= topmostSubform[0].Page1[0].f1_57[0]
+#line 12
+standard_deduction= topmostSubform[0].Page1[0].f1_56[0]
 
 #line 14 - add lines 13, 14
 total_dedction=     topmostSubform[0].Page1[0].f1_58[0]

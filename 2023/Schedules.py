@@ -276,7 +276,8 @@ def form_1116(schedulePath, scheduleFields, schedule3Path, schedule3Fields, f104
         writer.pages[0], {
             fields['name']: personal_data['name'] + ' ' + personal_data['family_name'],
             fields['ssn']: personal_data['ssn'],
-            fields['country']: 'ISRAEL',
+            fields['state_from']:personal_data['country'],
+            fields['country']: personal_data['country'],
             fields['income_reason']: 'WAGES',
             fields['income_sum']: salary_usd,
             fields['total_income_sum']: salary_usd,
@@ -404,17 +405,18 @@ def capitalGain(schedulePath, scheduleFields, conf =  '.editconfig' ,outputfile 
 
 # other income - DMEI LIYDA
 # 'C:\\Users\\aman\\PycharmProjects\\pdfAutoCompliter\\fields_forms\\schedule1_fields'
-def schedule_1(schedulePath, scheduleFields ,reason='PAYMENTS INSTEAD OF SALARY DURING BIRTH-VACATION' ,outputfile =output + 'schedule1'+outputEndix):
+def schedule_1(schedulePath, scheduleFields ,reason='MATERNITY PAY' ,outputfile =output + 'schedule1'+outputEndix):
 
     data = configObjToArray('CALC_DATA', '.\\.editconfig')
     if not data['dmei_liyda'].isnumeric():
         print('Error in file: '+schedulePath+ ': Dmei-lyda is not recognized value')
-        return
+        return 0
 
     if  data['dmei_liyda'].isnumeric() and int(data['dmei_liyda']) <= 0 :
         print('Dmei-Lyda is 0.')
         return 0
 
+    dmei_lida_USD = int(float(data['dmei_liyda']) / float(data['ILS_USD_rate']))
 
     fields = configObjToArray('FIELDS', scheduleFields)
     personal_data = configObjToArray('FILLER_DETAILS', '.\\.editconfig')
@@ -428,12 +430,12 @@ def schedule_1(schedulePath, scheduleFields ,reason='PAYMENTS INSTEAD OF SALARY 
             fields['ssn']: personal_data['ssn'],
             # fields['other_income_sum'] : ,
             fields['other_income_src']: reason,
-            fields['other_income_amount']: data['dmei_liyda'],
-            fields['total_income']: data['dmei_liyda'],
-            fields['sum']: data['dmei_liyda']})
+            fields['other_income_amount']: dmei_lida_USD,
+            fields['total_income']: dmei_lida_USD,
+            fields['sum']: dmei_lida_USD})
 
     # write "Output-beta" to pypdf-Output-beta.pdf
     with open(outputfile, "wb") as output_stream:
         writer.write(output_stream)
     forms.append('schedule 1')
-    return int (data['dmei_liyda'])
+    return int (dmei_lida_USD)
