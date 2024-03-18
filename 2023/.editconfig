@@ -44,21 +44,21 @@ standard_deduction= 20800
 #1099 form, Get from your bank.
 
 [SHORT_TERM]
-cost_basis=1000
-proceeds = 1200
-realized_gain=200
+cost_basis=0
+proceeds = 0
+realized_gain=0
 loss_carry_over = 0
 
 [LONG_TERM]
-cost_basis= 9000
-proceeds = 9800
-realized_gain= 500
+cost_basis= 0
+proceeds = 0
+realized_gain= 0
 loss_carry_over = 0
 
 [DIVIDENDS]
 #dividends- "IRS Box DIVIDENDS AND DISTRIBUTIONS"
-qualified_dividend=460
-ordinary_dividend=470
+qualified_dividend=0
+ordinary_dividend=0
 
 
 

@@ -126,7 +126,7 @@ def reader():
                                 fields['qualified_dividends']:str(l3a),
                                 fields['ordinary_dividends'] : str(l3b),
                                 fields['capital_gain']:str(l7),
-                                fields['dmei_liyda']:str(l8)
+                                fields['dmei_liyda']:str(l8),
                                 fields['total_income']:str (l9),
                                 fields['total_adjusted']:str(l10),
                                 fields['total_income_adjusted']:str(l11),
@@ -188,7 +188,7 @@ def reader():
         else:
             with open(output, "a") as declarations:
                 if j == 5:
-                    declarations.write('\n===========     DEPENDENCIES    ===================\n')
+                    declarations.write('\n\n===========     DEPENDENCIES    ===================\n\n\n')
                 declarations.write(str(j) + ' > ' + 'Name:' +dependetsArr[i]['name']+
                      '  SSN: ' +dependetsArr[i]['ssn']+ '  Relation: ' +dependetsArr[i]['rel']+ '  Qualifies for Child tax credit [V]\n')
 
@@ -196,7 +196,7 @@ def reader():
     declarations.close()
 
     with open(output, "a") as declarations:
-        declarations.write('===========     ADDED FORMS     =================\n')
+        declarations.write('\n===========     ADDED FORMS     =================\n')
         for i in Schedules.forms:
             declarations.write(str(Schedules.forms.index(i)+1)+' > '+i+'\n')
 

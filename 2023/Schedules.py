@@ -54,11 +54,11 @@ def f8812 (schedulePath, scheduleFields ,f1040_l1 , f1040_l11 ,f1040_l18_tax ,s3
             print('You need to fill in 8812 form Part II-B manually!')
             l27=l17
     else:
-        print('If are a bona fide resident of Puerto Rico, go to line 21')
+        print('In Form 8812 line 20: If are a bona fide resident of Puerto Rico, go and fill lines 21 - 26')
         if l20 > l17:
-            l27 = l20
-        else:
             l27 = l17
+        else:
+            l27 = l20
 
     result['l28']= l27
 
@@ -130,7 +130,7 @@ def calcTax(amountTaxtable_104l15, conf ='.\\.editconfig'):
     sched_D_smaller_l15_or_16 = int(long_term['realized_gain'])
 
     if sched_D_smaller_l15_or_16 <= 0 and qualifiedDivindends <=0 :
-        return getTaxFromTable(amountTaxtable_104l15)        #has changed from 2022
+        return int(getTaxFromTable(amountTaxtable_104l15))                  #has changed from 2022
 
     if  int(short_term['realized_gain']) < sched_D_smaller_l15_or_16:
         sched_D_smaller_l15_or_16=int(short_term['realized_gain'])
