@@ -4,7 +4,7 @@ from pypdf import PdfReader, PdfWriter
 from Util import configObjToArray
 
 
-forms = []
+forms = ['1040 - 2023']
 output= configObjToArray('DIRS', '.editconfig')['output_folder'] + '\\'
 outputEndix = "_2023.pdf"
 
@@ -416,7 +416,7 @@ def schedule_1(schedulePath, scheduleFields ,reason='MATERNITY PAY' ,outputfile 
         print('Dmei-Lyda is 0.')
         return 0
 
-    dmei_lida_USD = int(float(data['dmei_liyda']) / float(data['ILS_USD_rate']))
+    dmei_lida_USD = int(float(data['dmei_liyda']) / float(data['ils_usd_rate']))
 
     fields = configObjToArray('FIELDS', scheduleFields)
     personal_data = configObjToArray('FILLER_DETAILS', '.\\.editconfig')

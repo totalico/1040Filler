@@ -174,8 +174,8 @@ def reader():
 
 
     with open(output, "w") as declarations:
-        declarations.write('\n\n===========     ILS/DOLLAR RATE   ============\n\n')
-        declarations.write('1 USD = ' + calc['ils_usd_rate'].__str__() + ' ILS')
+        declarations.write('\n\n===========     ILS/DOLLAR RATE   ============\n\n\n')
+        declarations.write('1 USD = ' + calc['ils_usd_rate'].__str__() + ' ILS\n\n\n')
 
     j = 1
     for i in dependetsArr:
@@ -196,7 +196,7 @@ def reader():
     declarations.close()
 
     with open(output, "a") as declarations:
-        declarations.write('\n===========     ADDED FORMS     =================\n')
+        declarations.write('\n===========     ATTACHED FORMS     =================\n')
         for i in Schedules.forms:
             declarations.write(str(Schedules.forms.index(i)+1)+' > '+i+'\n')
 

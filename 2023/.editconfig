@@ -32,9 +32,9 @@ naama =     name : NAAMA,     ssn : 556644987, rel : DAUGHTER
 
 [CALC_DATA]
 salary_in_ILS=300000
-dmei_liyda = 0
+dmei_liyda = 12300
 
-ILS_USD_rate = 3.8
+ILS_USD_rate = 3.6
 tax_in_ILS = 50000
 bituch_leumi_ILS= 20000
 bituch_briut_ILS= 20000
